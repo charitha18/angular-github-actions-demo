@@ -1,5 +1,8 @@
-name: Test project
-on: push
+name: Workflow when pullrequest opened
+on: 
+  pull_request:
+    types:
+      - opened
 jobs:
   test:
     runs-on: ubuntu-latest

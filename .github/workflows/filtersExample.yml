@@ -1,0 +1,15 @@
+name: Workflow when push targets main branch
+on: 
+  push:
+    branches:
+      - 'main'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get code
+        uses: actions/checkout@v4
+      - name: Install Nodejs
+        uses: actions/setup-node@v4
+      - name: Install dependencies
+        run: npm install
