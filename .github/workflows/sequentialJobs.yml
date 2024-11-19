@@ -1,5 +1,5 @@
 name: Workflow with sequential jobs
-on: workflow_dispath
+on: workflow_dispatch
 jobs:
   test:
     runs-on: ubuntu-latest
