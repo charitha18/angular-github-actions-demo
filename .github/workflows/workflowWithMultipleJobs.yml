@@ -15,7 +15,7 @@ jobs:
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@latest
       - name: Run tests
-        run: npm run test -- --browsers=ChromeHeadless      
+        run: npm run test -- --browsers=Chrome      
   build:
     runs-on: ubuntu-latest
     steps:
