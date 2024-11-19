@@ -11,11 +11,9 @@ jobs:
         with:
           node-version: '14.17.6'
       - name: Install dependencies
-        run: npm ci
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@latest
+        run: npm ci     
       - name: Run tests
-        run: npm run test -- --browsers=Chrome      
+        run: npm run test      
   build:
     runs-on: ubuntu-latest
     steps:
