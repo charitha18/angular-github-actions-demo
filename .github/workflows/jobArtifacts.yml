@@ -42,7 +42,7 @@ jobs:
         with:
           name: dist-files
       - name: output contents
-        run: ls
+        run: ls -R
       - name: deploy
         run: echo "Deploying.."
          
